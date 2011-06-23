@@ -55,7 +55,7 @@ class APN::App < APN::Base
           end
         end
       rescue Exception => e
-        log_connection_exception(e)
+        # log_connection_exception(e)
       end
     # end
   end
