@@ -55,7 +55,7 @@ class APN::App < APN::Base
           end
         end
       rescue Exception => e
-        logger.error "Push exception: #{e}"
+        logger.error "Push exception: #{e.message}"
         send_notifications_for_cert(the_cert, app_id)
         # log_connection_exception(e)
       end
